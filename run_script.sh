@@ -16,7 +16,7 @@ QUEUE=campus-new
 # Workflow-Specific Options
 
 RESOURCES=/home/kmayerbl/NextFlow/nf-to-python/test_data/
-OUTPUT_FOLDER=/home/kmayerbl/NextFlow/nf-to-python/test_data/test_data/test_output_folder/
+OUTPUT_FOLDER=/fh/fast/gilbert_p/kmayerbl/nextflow_sink/
 
 # Load the Nextflow module (if running on rhino/gizmo)
 ml Nextflow
