@@ -9,6 +9,7 @@ However, this could be any operation, with argparse to manage I/O.
 import argparse
 import pandas as pd 
 import argparse
+import tcrdist
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='return first 5 lines of a .tsv loaded via pandas')
