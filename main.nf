@@ -20,7 +20,7 @@ nextflow.enable.dsl=2
 params.resources     = './test_data/'
 params.output_folder = './test_data/test_output_folder/'
 // containers
-params.container__python_container = false
+params.container__python_container = '/fh/scratch/delete90/gilbert_p/singularity/tcrdist3_v022.sif'
 
 // import processes
 
