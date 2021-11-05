@@ -3,7 +3,7 @@
 nextflow.enable.dsl=2
 
 process python_routine {
-    //container '/fh/scratch/delete90/gilbert_p/singularity/tcrdist3_v022.sif'
+    container ${params.container__python_container}
 
     input:
     path(tsv_file)

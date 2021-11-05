@@ -20,7 +20,7 @@ nextflow.enable.dsl=2
 params.resources     = './test_data/'
 params.output_folder = './test_data/test_output_folder/'
 // containers
-params.container__python_pandas = false
+params.container__python_container = false
 
 // import processes
 

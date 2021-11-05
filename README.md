@@ -26,6 +26,15 @@ NXF_VER=$NF_VER nextflow run main.nf \
 * Change the bin/python_routine.py
 
 
+### Singularity Container
+
+Making a singularity container from a docker image/
+
+```bash
+ml Singularity
+singularity build ../../ / /delete90/ /singularity/tcrdist3_v022.sif docker://quay.io/kmayerb/tcrdist3:0.2.2
+```
+
 ### TODO
 
 * Configure to work for singularity 
