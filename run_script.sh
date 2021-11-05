@@ -5,7 +5,7 @@ set -Eeuo pipefail
 NXF_VER=20.10.0
 
 # Nextflow Configuration File
-NXF_CONFIG=nextflow.config
+NXF_CONFIG=/home/kmayerbl/NextFlow/nf-to-python/nextflow.config
 
 # Workflow to Run (e.g. GitHub repository)
 WORKFLOW_REPO=kmayerb/nf-to-python
@@ -31,4 +31,3 @@ nextflow \
     -process.queue $QUEUE \
     -with-report nextflow.report.html \
     -resume
-    
