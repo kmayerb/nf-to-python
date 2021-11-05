@@ -13,6 +13,7 @@ process python_routine {
     
     script:
     """
+    ml Singularity
     python_routine.py --input_filename ${tsv_file} --output_tag .head5.tsv --sep \$'\t'
     """
 }
