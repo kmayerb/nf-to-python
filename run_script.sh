@@ -15,6 +15,9 @@ QUEUE=campus-new
 
 # Workflow-Specific Options
 
+RESOURCES=/home/kmayerbl/NextFlow/nf-to-python/test_data/
+OUTPUTFOLDER=/home/kmayerbl/NextFlow/nf-to-python/test_data/test_data/test_output_folder/
+
 # Load the Nextflow module (if running on rhino/gizmo)
 ml Nextflow
 # Load the Singularity module (if running on rhino/gizmo with Singularity)
@@ -28,6 +31,8 @@ nextflow \
     run \
     -c ${NXF_CONFIG} \
     ${WORKFLOW_REPO} \
+    --resources $RESOURCES \
+    --output_folder $OUTPUT_FOLDER \
     -process.queue $QUEUE \
     -with-report nextflow.report.html \
     -resume
