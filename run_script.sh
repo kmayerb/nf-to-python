@@ -14,14 +14,15 @@ WORKFLOW_REPO=kmayerb/nf-to-python
 QUEUE=campus-new
 
 # Workflow-Specific Options
-
 RESOURCES=/home/kmayerbl/NextFlow/nf-to-python/test_data/
 OUTPUT_FOLDER=/fh/fast/gilbert_p/kmayerbl/nextflow_sink/
-
+CONTAINER=/fh/scratch/delete90/gilbert_p/singularity/tcrdist3_v022.sif
 # Load the Nextflow module (if running on rhino/gizmo)
 ml Nextflow
+
 # Load the Singularity module (if running on rhino/gizmo with Singularity)
 ml Singularity
+
 # Make sure that the singularity executables are in the PATH
 export PATH=$SINGULARITYROOT/bin/:$PATH
 
@@ -32,6 +33,7 @@ nextflow \
     -c ${NXF_CONFIG} \
     ${WORKFLOW_REPO} \
     -r main \
+    --container__python_container $CONTAINER \
     --resources $RESOURCES \
     --output_folder $OUTPUT_FOLDER \
     -process.queue $QUEUE \
