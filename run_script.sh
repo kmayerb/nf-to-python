@@ -31,6 +31,7 @@ nextflow \
     run \
     -c ${NXF_CONFIG} \
     ${WORKFLOW_REPO} \
+    -r main \
     --resources $RESOURCES \
     --output_folder $OUTPUT_FOLDER \
     -process.queue $QUEUE \
