@@ -34,7 +34,7 @@ This is how I envision reusing this again and again.
 4. Change the `bin/python_routine.py` to be the python script your want to execute on each file.
 5. If things get more complex modify the workflow.
 
-### Singularity container for a Docker image
+### Singularity container from a Docker image
 
 Commands to make a singularity container from a docker image downloadable form dockerhub or quay.io. Save this file to the scratch delete[90|30|10] directory since you won't need it forever. 
 
