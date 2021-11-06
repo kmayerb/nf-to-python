@@ -16,9 +16,9 @@ These two key resources are required reading system specific configuration:
 * [Running Workflows on Gizmo](https://sciwiki.fredhutch.org/hdc/workflows/running/on_gizmo/) - discusses the nextflow config
 * [Workflow Run Scripts](https://sciwiki.fredhutch.org/hdc/workflows/running/run_script/) - discusses the run execution options needed to get singularity to play nicely.
 
-### Execution using a run file
+### Execution using a bash run file
 
-see the run_script.sh, the project specific variables are
+See the `run_script.sh`. For instance, in this case, the project specific variables are:
 
 * `RESOURCES` - where your input files reside.
 * `OUTPUT_FOLDER` - the destination for output files. 
