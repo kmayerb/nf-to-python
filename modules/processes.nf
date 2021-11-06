@@ -3,7 +3,7 @@
 nextflow.enable.dsl=2
 
 process python_routine {
-    container "${params.container__python_container}"
+    container "${params.container__python}"
 
     input:
     path(tsv_file)
