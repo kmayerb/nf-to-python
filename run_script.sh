@@ -31,6 +31,7 @@ NXF_VER=$NXF_VER \
 nextflow \
     run \
     -c ${NXF_CONFIG} \
+    -profile cluster \
     ${WORKFLOW_REPO} \
     -r main \
     --container__python_container $CONTAINER \
